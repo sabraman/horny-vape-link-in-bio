@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "HORNY VAPE | ВЕЙПШОП",
     description: "HORNY VAPE",
     siteName: "HORNY VAPE",
-    images: './favicons/android-chrome-512x512.png',
+    images: './og-image.png',
   },
   icons: {
     icon: "./favicons/favicon.svg",
