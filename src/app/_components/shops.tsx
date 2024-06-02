@@ -131,11 +131,11 @@ export function Shops() {
                         </DrawerHeader>
                         <DrawerFooter>
                             <p>Режим работы: {shop.workTime}</p>
-                            <div className="inline-flex w-full items-center justify-between gap-4">
+                            <div className="inline-flex w-full items-center justify-between gap-2">
                                 {/* <Link className='h-11' variant={"outline"} size={"icon"}><Phone /></Link> */}
                                 <Link
                                     href={`tel:${shop.phone}`}
-                                    className="inline-flex h-12 w-12 items-center justify-center rounded-md border-2 border-gray-800 bg-gray-950  uppercase text-gray-50 transition-colors hover:bg-gray-800 hover:text-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                                    className="inline-flex h-12 w-12 px-3 items-center justify-center rounded-md border-2 border-gray-800 bg-gray-950  uppercase text-gray-50 transition-colors hover:bg-gray-800 hover:text-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-300"
                                     target="_blank"
                                 >
                                     <Phone />
@@ -145,7 +145,7 @@ export function Shops() {
                                     className="inline-flex h-12  w-1/2 items-center justify-center rounded-md bg-yellow-500 px-6 font-medium  uppercase text-gray-50 transition-colors hover:bg-yellow-600 focus:outline-none focus:ring-1 focus:ring-gray-300"
                                     target="_blank"
                                 >
-                                    Яндекс карты
+                                    Я.Карты
                                 </Link>
                                 <Link
                                     href={shop.doubleGis}
