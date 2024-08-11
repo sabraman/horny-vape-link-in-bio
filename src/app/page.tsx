@@ -11,6 +11,8 @@ import {
 import Youtube from "@/components/ui/Youtube";
 import { Shops } from "./_components/shops";
 import { LatestVideo } from "./_components/latest-video";
+import TicketsCloud from "./_components/tickets-cloud";
+import dynamic from "next/dynamic";
 
 const franchiseSlides = [
   "franchise (1).jpg",
@@ -22,6 +24,20 @@ const franchiseSlides = [
   "franchise (7).jpg",
   "franchise (8).jpg",
 ];
+
+const partySlides = [
+  "party1.jpg",
+  "party2.jpg",
+  "party3.jpg",
+  "party4.jpg",
+  "party5.jpg",
+  "party6.jpg",
+  "party7.jpg",
+];
+
+const NoSSR = dynamic(() => import("./_components/tickets-cloud"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -78,13 +94,19 @@ export default function Home() {
       <div className="mt-8 flex flex-col gap-4">
         <Link
           className="inline-flex h-12 items-center justify-center rounded-md  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-          href="tg://resolve?domain=party_horny"
+          href="tg://resolve?domain=hornyplace_tg"
         >
           Telegram
         </Link>
         <Link
-          className="inline-flex h-12 items-center justify-center rounded-md  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+          className="inline-flex h-12 items-center justify-center rounded-md  bg-sky-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
           href="tg://resolve?domain=Horny_Place_bot"
+        >
+          Наш бот
+        </Link>
+        <Link
+          className="inline-flex h-12 items-center justify-center rounded-md  bg-blue-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+          href="https://vk.com/hornyplace_vk"
         >
           Наш бот
         </Link>
@@ -96,15 +118,40 @@ export default function Home() {
         </Link>
         <Link
           className="inline-flex h-12 items-center justify-center rounded-md bg-pink-500  px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-pink-500/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-          href="https://instagram.com/hornyvapeshop/"
+          href="https://instagram.com/hornyplace_inst/"
         >
           Inst
         </Link>
       </div>
       <LatestVideo />
 
+      <p className="mt-8 text-center text-4xl font-bold uppercase  text-gray-50">
+        Horny place
+      </p>
+      <Carousel className="mt-6 w-full max-w-md">
+        <CarouselContent>
+          {partySlides.map((slide) => (
+            <CarouselItem key={slide}>
+              <div className="p-1">
+                <AspectRatio ratio={16 / 9}>
+                  <Image
+                    src={`/images/${slide}`}
+                    width={640}
+                    height={360}
+                    alt={slide}
+                    className="rounded-lg object-cover"
+                    priority
+                  />
+                </AspectRatio>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+      <NoSSR />
       <Shops />
-
       <p className="mt-8 text-center text-4xl font-bold uppercase  text-gray-50">
         франшиза
       </p>

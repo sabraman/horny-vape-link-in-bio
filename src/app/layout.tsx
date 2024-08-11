@@ -4,15 +4,14 @@ import "./globals.css";
 import { Logo } from "./_components/logo";
 import { TopNav } from "./_components/topnav";
 
-
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HORNY VAPE | ВЕЙПШОП",
   description: "HORNY VAPE",
-  metadataBase: new URL('https://hrny.ru/'),
+  metadataBase: new URL("https://hrny.ru/"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
     type: "website",
@@ -20,14 +19,12 @@ export const metadata: Metadata = {
     title: "HORNY VAPE | ВЕЙПШОП",
     description: "HORNY VAPE",
     siteName: "HORNY VAPE",
-    images: './og-image.png',
+    images: "./og-image.png",
   },
   icons: {
     icon: "./favicons/favicon.svg",
     apple: "./favicons/apple-touch-icon.png",
-  }
-
-
+  },
 };
 
 export default function RootLayout({
