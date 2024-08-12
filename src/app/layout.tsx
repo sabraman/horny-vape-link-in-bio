@@ -37,15 +37,7 @@ export default function RootLayout({
       <head>
         <meta name="yandex-verification" content="eaf2e22c2dc6f579" />
       </head>
-      <body className={montserrat.className}>
-        <main className="flex min-h-screen flex-col items-center justify-center bg-gray-950 px-2 py-12">
-          <div className="space-y-18 w-full max-w-md items-center">
-            <Logo />
-            {/* <TopNav /> */}
-            {children}
-          </div>
-        </main>
-      </body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
