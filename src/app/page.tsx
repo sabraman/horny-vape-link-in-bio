@@ -8,9 +8,9 @@ import {
   CarouselNext,
   Carousel,
 } from "@/components/ui/carousel";
-import { Shops } from "../_components/shops";
-import { LatestVideo } from "../_components/latest-video";
-import { Logo } from "../_components/logo";
+import { Shops } from "./_components/shops";
+import { LatestVideo } from "./_components/latest-video";
+import { Logo } from "./_components/logo";
 import { cn } from "@/lib/utils";
 
 const franchiseSlides = [
