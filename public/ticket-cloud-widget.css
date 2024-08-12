@@ -1,0 +1,33 @@
+.e-popup {
+  background: black !important;
+}
+.ticket__title {
+  color: white;
+}
+.ticket-price {
+  color: white;
+}
+
+.order-total__amount {
+  color: white;
+}
+
+.order-total__extra-info {
+  color: white;
+}
+
+.ticket-list__offer-link-box {
+  color: white;
+}
+
+.header__container {
+  background: #222;
+}
+
+.header__event-title {
+  color: white;
+}
+
+.header__event-description {
+  color: #dldldl;
+}
