@@ -48,7 +48,7 @@ const wearSlides = [
 export default function Page() {
 	return (
 		<>
-			<main className="mx-auto flex max-w-4xl flex-col gap-6 p-8">
+			<main className="mx-auto flex max-w-4xl flex-col gap-6 p-4">
 				<Logo />
 				<Carousel className="w-full">
 					<CarouselContent>
