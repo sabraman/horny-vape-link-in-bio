@@ -149,7 +149,7 @@ export function Shops() {
             className={cn(
               `${shop.color[0]}`,
               `${shop.color[1]}`,
-              "inline-flex h-12 items-center justify-center rounded-md  px-6 text-xl font-bold uppercase text-gray-50 transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300"
+              "h-auto py-3  inline-flex items-center justify-center rounded-md  px-6 text-xl font-bold uppercase text-gray-50 transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300"
             )}
           >
             {/* <Button

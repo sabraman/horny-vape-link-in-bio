@@ -12,6 +12,8 @@ import { Shops } from "./_components/shops";
 import { LatestVideo } from "./_components/latest-video";
 import { Logo } from "./_components/logo";
 import { cn } from "@/lib/utils";
+import TicketsCloud from "./_components/tickets-cloud";
+import Widget from "./_components/widget";
 
 const franchiseSlides = [
   "franchise (1).jpg",
@@ -25,7 +27,7 @@ const franchiseSlides = [
 ];
 
 const partySlides = [
-  "party1.jpg",
+  // "party1.jpg",
   "party2.jpg",
   "party3.jpg",
   "party4.jpg",
@@ -52,60 +54,14 @@ function DemoContainer({
 export default function Page() {
   return (
     <>
-      <main className=" items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid lg:grid-cols-2 xl:grid-cols-3">
-        <div className="hidden lg:col-span-3 lg:grid">
-          <Logo />
-        </div>
-
+      <main className=" items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid lg:grid-cols-2 xl:grid-cols-1 max-w-4xl mx-auto">
         <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
           <DemoContainer>
-            <div className="sm:flex md:flex lg:hidden xl:hidden">
-              <Logo />
-            </div>
-            <p className="mt-6 text-center text-4xl font-bold uppercase  text-gray-50">
-              Соцсети
-            </p>
-
-            <div className="mt-6 flex flex-col gap-4">
-              <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="tg://resolve?domain=hornyplace_tg"
-              >
-                Telegram
-              </Link>
-              <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="tg://resolve?domain=Horny_Place_bot"
-              >
-                Наш бот
-              </Link>
-              <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg  bg-blue-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="https://vk.com/hornyplace_vk"
-              >
-                Наш бот
-              </Link>
-              <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-red-500 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-red-500/90  focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="https://www.youtube.com/channel/UCYtkLtr1QD3IzDo39848ytA?sub_confirmation=1"
-              >
-                Youtube
-              </Link>
-              <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-pink-500  px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-pink-500/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="https://instagram.com/hornyplace_inst/"
-              >
-                Inst
-              </Link>
-            </div>
-            <LatestVideo />
-          </DemoContainer>
-        </div>
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
-          <DemoContainer>
-            <p className="mt-6 text-center text-4xl font-bold uppercase  text-gray-50">
+            <Logo />
+            <div className="sm:flex md:flex lg:hidden xl:hidden"></div>
+            {/* <p className="mt-6 text-center text-4xl font-bold uppercase  text-gray-50">
               Horny place
-            </p>
+            </p> */}
             <Carousel className="mt-6 w-full">
               <CarouselContent>
                 {partySlides.map((slide) => (
@@ -127,6 +83,49 @@ export default function Page() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
+            <Widget />
+            <TicketsCloud />
+            <p className="mt-6 text-center text-4xl font-bold uppercase  text-gray-50">
+              Соцсети
+            </p>
+
+            <div className="mt-6 flex flex-col gap-4">
+              <Link
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                href="tg://resolve?domain=hornyplace_tg"
+              >
+                Telegram
+              </Link>
+              <Link
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg  bg-sky-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                href="tg://resolve?domain=Horny_Place_bot"
+              >
+                Наш бот
+              </Link>
+              <Link
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg  bg-blue-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                href="https://vk.com/hornyplace_vk"
+              >
+                ВК
+              </Link>
+              <Link
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg bg-red-500 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-red-500/90  focus:outline-none focus:ring-1 focus:ring-gray-300"
+                href="https://www.youtube.com/channel/UCYtkLtr1QD3IzDo39848ytA?sub_confirmation=1"
+              >
+                Youtube
+              </Link>
+              <Link
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg bg-pink-500  px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-pink-500/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                href="https://instagram.com/hornyplace_inst/"
+              >
+                Inst
+              </Link>
+            </div>
+            {/* <LatestVideo /> */}
+          </DemoContainer>
+        </div>
+        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
+          <DemoContainer>
             <Shops />
           </DemoContainer>
         </div>
@@ -163,7 +162,7 @@ export default function Page() {
 
             <div className="mt-6 flex flex-col gap-4">
               <Link
-                className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                className="h-auto py-3  inline-flex items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
                 href="tg://resolve?domain=arkingen"
               >
                 Узнать больше

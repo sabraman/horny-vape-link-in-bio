@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Logo } from "./_components/logo";
 import { TopNav } from "./_components/topnav";
+import Script from "next/script";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -37,7 +38,10 @@ export default function RootLayout({
       <head>
         <meta name="yandex-verification" content="eaf2e22c2dc6f579" />
       </head>
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        {children}
+        <Script src="https://ticketscloud.com/static/scripts/widget/tcwidget.js" />
+      </body>
     </html>
   );
 }
