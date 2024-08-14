@@ -12,7 +12,7 @@ const gajraj = Gajraj_One({ weight: "400", subsets: ["latin"] });
 
 export default function Widget() {
 	return (
-		<div className="animate-border duration-6s  rounded-lg border-dashed bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
+		<div className="animate-border rounded-lg  border-dashed bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1 duration-6s">
 			<div className="flex w-full flex-col gap-6 rounded-md bg-black p-6">
 				<p
 					className={cn(
@@ -76,12 +76,8 @@ export default function Widget() {
 					</ul>
 				</div>
 				<div className="mt-4 flex flex-col items-center justify-between gap-2 space-x-4 text-lg font-medium text-white sm:flex-row md:flex-row">
-					<div>
-						<span className="items-left flex text-3xl font-semibold">
-							Когда:
-						</span>
-					</div>
-					<div className="flex items-center justify-end gap-2">
+					<span className="items-left flex text-3xl font-semibold">Когда:</span>
+					<div className="flex flex-row items-center justify-end gap-2 max-[380px]:flex-col">
 						<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-gray-500">
 							<span className="font-semibold text-white">23 августа,</span>
 							<span className="font-semibold">пт</span>
@@ -102,19 +98,20 @@ export default function Widget() {
 						></AddToCalendarButton>
 					</div>
 				</div>
-				<div className="mt-4 flex flex-col items-center justify-between gap-2 space-x-4 text-lg font-medium text-white sm:flex-row md:flex-row">
+				<div className="mt-4 flex w-auto flex-col items-center justify-between gap-2 space-x-4 text-lg font-medium text-white sm:flex-row md:flex-row">
 					<span className="items-right flex text-3xl font-semibold">Где:</span>
-					<div className="flex items-center justify-end gap-2">
+					<div className="flex flex-row items-center justify-end gap-2 max-[410px]:flex-col">
 						<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-gray-500">
 							<span className="font-semibold text-white">DVOIKA,</span>
 							<span className="font-semibold text-white">Белинского 9</span>
 						</div>
 						<Link
 							target="_blank"
-							className="text-bold mx-1 inline-flex h-12 w-12 items-center justify-center rounded-md border border-[#3d3d3d] bg-[#232323]  text-xl font-bold uppercase text-[#dedede] transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300"
+							className="text-bold mx-1 inline-flex h-12 w-12 items-center justify-center rounded-md border border-[#3d3d3d] bg-[#232323] text-xl  font-bold uppercase text-[#dedede] transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300 max-[410px]:w-full"
 							href="https://yandex.com/maps?whatshere%5Bpoint%5D=30.346599467234753%2C59.93808975294448&whatshere%5Bzoom%5D=18.952005&ll=30.346599467249355%2C59.93808975220233&z=18.952005"
 						>
-							<LucideMapPin />
+							<LucideMapPin className="max-[410px]:hidden" />
+							<span className="min-[410px]:hidden">Я.карты</span>
 						</Link>
 					</div>
 				</div>
