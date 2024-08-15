@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 const gajraj = Gajraj_One({ weight: "400", subsets: ["latin"] });
 export function Logo() {
 	return (
-		<nav className="flex w-full flex-col items-center justify-center gap-4">
-			<Link href="/" passHref>
+		<nav className="mt-6 flex w-full flex-col items-center justify-center">
+			{/* <Link href="/" passHref>
 				<svg
 					viewBox="0 0 209 271"
 					fill="none"
@@ -25,15 +25,12 @@ export function Logo() {
 						</g>
 					</g>
 				</svg>
+			</Link> */}
+			<Link href={"/"} className={gajraj.className}>
+				<h1 className="text-center text-5xl font-bold text-horny-pink drop-shadow-horny-sm filter md:text-7xl lg:text-9xl">
+					HORNY
+				</h1>
 			</Link>
-			<h1
-				className={cn(
-					"text-center text-4xl font-bold text-horny-pink drop-shadow-horny-sm filter",
-					gajraj.className,
-				)}
-			>
-				HORNY
-			</h1>
 		</nav>
 	);
 }

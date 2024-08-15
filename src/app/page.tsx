@@ -21,8 +21,8 @@ import Wear from "./_components/wear";
 export default function Page() {
 	return (
 		<>
+			<Logo />
 			<main className="mx-auto flex max-w-4xl flex-col gap-24 p-4">
-				{/* <Logo /> */}
 				<Widget />
 				<Social />
 				<Wear />

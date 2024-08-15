@@ -1,16 +1,21 @@
 import type { Config } from "tailwindcss";
-import { Gajraj_One } from "next/font/google";
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 
 const config: Config = {
-	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-	],
+	content: {
+		files: [
+			"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+			"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+			"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		],
+		extract,
+	},
 	theme: {
 		fontFamily: {
 			gajraj: ["Gajraj One", "sans-serif"],
 		},
+		screens,
+		fontSize,
 		extend: {
 			dropShadow: {
 				"horny-sm": "0 0 5px rgba(255,24,124,0.7)",
@@ -49,6 +54,6 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), fluid],
 };
 export default config;
