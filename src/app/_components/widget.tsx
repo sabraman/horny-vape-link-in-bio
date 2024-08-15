@@ -53,18 +53,20 @@ export default function Widget() {
 				<CarouselNext />
 			</Carousel>
 			<div className="animate-border rounded-lg  border-dashed bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1 duration-6s">
-				<div className="flex w-full flex-col gap-6 rounded-md bg-black p-6">
+				<div className="max-[22rem]:p-2 flex w-full flex-col gap-6 rounded-md bg-black p-6">
 					<p
 						className={cn(
 							gajraj.className,
-							" my-4 text-center text-8xl font-bold uppercase text-white drop-shadow-[0px_0px_3px_#fff] filter min-[320px]:text-7xl",
+							"~text-6xl/8xl my-4 text-center font-bold uppercase text-white drop-shadow-[0px_0px_3px_#fff] filter",
 						)}
 					>
 						Nova
 					</p>
-					<div className="text-left text-2xl font-medium  text-gray-50">
-						<span className="block text-3xl font-bold">Тебя ждут:</span>
-						<ul className="ml-6 mt-2 list-outside list-disc">
+					<div className="text-left font-medium  text-gray-50">
+						<span className="block text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+							Тебя ждут:
+						</span>
+						<ul className="ml-6 mt-2  list-outside list-disc text-lg sm:text-2xl md:text-3xl lg:text-4xl">
 							<li>
 								Известные имена электро-сцены, которые исполнят для тебя свои
 								лучшие сеты
@@ -77,11 +79,11 @@ export default function Widget() {
 						</ul>
 					</div>
 					<div className="text-left text-2xl font-medium  text-gray-50">
-						<span className="block text-3xl font-semibold">
+						<span className="block text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
 							Для тебя сыграют:
 						</span>
 						<ul className="ml-6 mt-2 list-outside list-disc">
-							<div className="flex w-full flex-col justify-between gap-4 text-3xl font-bold uppercase">
+							<div className="flex w-full flex-col justify-between gap-4 text-xl font-bold uppercase sm:text-3xl">
 								<li>
 									<span>Nabik</span>
 								</li>
@@ -104,8 +106,8 @@ export default function Widget() {
 						<span className="items-left flex text-3xl font-semibold">
 							Когда:
 						</span>
-						<div className="flex flex-row items-center justify-end gap-2 max-[380px]:flex-col">
-							<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-gray-500">
+						<div className="max-[24rem]:flex-col flex flex-row items-center justify-end gap-2">
+							<div className="max-[22rem]:flex-col max-[22rem]:h-auto flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500">
 								<span className="font-semibold text-white">23 августа,</span>
 								<span className="font-semibold">пт</span>
 								<span className="font-semibold text-white">21:00</span>
@@ -129,18 +131,18 @@ export default function Widget() {
 						<span className="items-right flex text-3xl font-semibold">
 							Где:
 						</span>
-						<div className="flex flex-row items-center justify-end gap-2 max-[410px]:flex-col">
-							<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-gray-500">
+						<div className="max-[26rem]:flex-col flex flex-row items-center justify-end gap-2">
+							<div className="max-[22rem]:flex-col max-[22rem]:h-auto flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500">
 								<span className="font-semibold text-white">DVOIKA,</span>
 								<span className="font-semibold text-white">Белинского 9</span>
 							</div>
 							<Link
 								target="_blank"
-								className="text-bold mx-1 inline-flex h-12 w-12 items-center justify-center rounded-md border border-[#3d3d3d] bg-[#232323] text-xl  font-bold uppercase text-[#dedede] transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300 max-[410px]:w-full"
+								className="text-bold mx-1 inline-flex h-12 w-12 items-center justify-center rounded-md border border-[#3d3d3d] bg-[#232323]  text-xl font-bold uppercase text-[#dedede] transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300"
 								href="https://yandex.com/maps?whatshere%5Bpoint%5D=30.346599467234753%2C59.93808975294448&whatshere%5Bzoom%5D=18.952005&ll=30.346599467249355%2C59.93808975220233&z=18.952005"
 							>
-								<LucideMapPin className="max-[410px]:hidden" />
-								<span className="min-[410px]:hidden">Я.карты</span>
+								<LucideMapPin className="" />
+								{/* <span className="min-[22rem]:hidden">Я.карты</span> */}
 							</Link>
 						</div>
 					</div>

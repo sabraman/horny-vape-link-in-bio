@@ -14,7 +14,10 @@ const config: Config = {
 		fontFamily: {
 			gajraj: ["Gajraj One", "sans-serif"],
 		},
-		screens,
+		screens: {
+			xs: "20rem",
+			...screens,
+		},
 		fontSize,
 		extend: {
 			dropShadow: {
@@ -54,6 +57,6 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate"), fluid],
+	plugins: [require("tailwindcss-animate"), require("fluid-tailwind")],
 };
 export default config;

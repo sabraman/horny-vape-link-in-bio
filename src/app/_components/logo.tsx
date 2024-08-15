@@ -27,7 +27,7 @@ export function Logo() {
 				</svg>
 			</Link> */}
 			<Link href={"/"} className={gajraj.className}>
-				<h1 className="text-center text-5xl font-bold text-horny-pink drop-shadow-horny-sm filter md:text-7xl lg:text-9xl">
+				<h1 className="~text-6xl/9xl text-center font-bold text-horny-pink drop-shadow-horny-sm filter">
 					HORNY
 				</h1>
 			</Link>
