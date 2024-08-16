@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://horny.place/",
-		title: "HORNY PLACE",
-		description: "HORNY PLACE",
-		siteName: "HORNY PLACE",
+		title: "HORNY",
+		description: "HORNY",
+		siteName: "HORNY",
 		images: "./og-image.png",
 	},
 	icons: {
