@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		title: "HORNY",
 		description: "HORNY",
 		siteName: "HORNY",
-		images: "./og-image.png",
+		images: "/images/horny-party.png",
 	},
 	icons: {
 		icon: "./favicons/favicon.svg",
