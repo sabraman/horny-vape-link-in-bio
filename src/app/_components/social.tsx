@@ -30,11 +30,11 @@ export default function Social() {
 					className="inline-flex h-auto  items-center justify-center rounded-lg bg-red-500 px-6 py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-red-500/90  focus:outline-none focus:ring-1 focus:ring-gray-300"
 					href="https://www.youtube.com/channel/UCYtkLtr1QD3IzDo39848ytA?sub_confirmation=1"
 				>
-					Youtube
+					Youtubeo
 				</Link>
 				<Link
 					className="inline-flex h-auto  items-center justify-center rounded-lg bg-pink-500 px-6  py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-pink-500/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-					href="https://instagram.com/hornyplace_inst/"
+					href="https://instagram.com/horny_inst/"
 				>
 					Inst
 				</Link>
