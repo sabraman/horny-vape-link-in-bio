@@ -53,11 +53,11 @@ export default function Widget() {
 				<CarouselNext />
 			</Carousel>
 			<div className="animate-border rounded-lg  border-dashed bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1 duration-6s">
-				<div className="max-[22rem]:p-2 flex w-full flex-col gap-6 rounded-md bg-black p-6">
+				<div className="flex w-full flex-col gap-6 rounded-md bg-black p-6 max-[22rem]:p-2">
 					<p
 						className={cn(
 							gajraj.className,
-							"~text-6xl/8xl my-4 text-center font-bold uppercase text-white drop-shadow-[0px_0px_3px_#fff] filter",
+							"my-4 text-center font-bold uppercase text-white drop-shadow-[0px_0px_3px_#fff] filter ~text-6xl/8xl",
 						)}
 					>
 						Nova
@@ -106,8 +106,8 @@ export default function Widget() {
 						<span className="items-left flex text-3xl font-semibold">
 							Когда:
 						</span>
-						<div className="max-[24rem]:flex-col flex flex-row items-center justify-end gap-2">
-							<div className="max-[22rem]:flex-col max-[22rem]:h-auto flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500">
+						<div className="flex flex-row items-center justify-end gap-2 max-[24rem]:flex-col">
+							<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500 max-[22rem]:h-auto max-[22rem]:flex-col">
 								<span className="font-semibold text-white">23 августа,</span>
 								<span className="font-semibold">пт</span>
 								<span className="font-semibold text-white">21:00</span>
@@ -120,7 +120,7 @@ export default function Widget() {
 								endDate="2024-08-24"
 								endTime="05:00"
 								timeZone="Europe/Moscow"
-								location="DVOIKA Санкт-Петербург Белинского 9"
+								location="Backseat bar Санкт-Петербург Белинского 9"
 								options="'Apple','Google'"
 								hideTextLabelButton
 								lightMode="dark"
@@ -131,9 +131,9 @@ export default function Widget() {
 						<span className="items-right flex text-3xl font-semibold">
 							Где:
 						</span>
-						<div className="max-[26rem]:flex-col flex flex-row items-center justify-end gap-2">
-							<div className="max-[22rem]:flex-col max-[22rem]:h-auto flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500">
-								<span className="font-semibold text-white">DVOIKA,</span>
+						<div className="flex flex-row items-center justify-end gap-2 max-[26rem]:flex-col">
+							<div className="flex h-12 w-auto flex-row justify-end gap-2 rounded-md bg-gray-800 px-3 py-3 text-center text-gray-500 max-[22rem]:h-auto max-[22rem]:flex-col">
+								<span className="font-semibold text-white">Backseat,</span>
 								<span className="font-semibold text-white">Белинского 9</span>
 							</div>
 							<Link
