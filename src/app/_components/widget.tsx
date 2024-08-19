@@ -158,7 +158,7 @@ export default function Widget() {
             target="_blank"
             href="https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjYyMTJiYzlmZjBhZDM0YjNhMDljYzMxIn0.UJi4ilAa-vbX4Op2vZ3FZ3_Jk8TIVbcTrXadlIRJdqM&lang=ru&event=66ba5f7145ed8a080fd2e4d4&s=1"
             className={cn(
-              "sticky bottom-0 z-50",
+              "sticky bottom-10 z-50",
               "text-bold inline-flex h-12 w-full items-center justify-center rounded-md bg-gray-50 px-6 text-xl font-bold uppercase text-black transition-colors focus:outline-none focus:ring-1 focus:ring-gray-300"
             )}
           >
