@@ -51,7 +51,7 @@ export default function Franchise() {
 
 			<Link
 				className="inline-flex h-auto  items-center justify-center rounded-lg bg-blue-500 px-6  py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-pink-500/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-				href="tg://resolve?domain=arkingen"
+				href="https://t.me/arkingen"
 			>
 				Узнать больше
 			</Link>

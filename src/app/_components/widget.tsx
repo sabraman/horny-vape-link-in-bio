@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Gajraj_One, Montserrat } from "next/font/google";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
@@ -16,6 +15,7 @@ import {
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import React, { useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 const gajraj = Gajraj_One({ weight: "400", subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ const partySlides = [
 ];
 
 export default function Widget() {
+  const [isHidden, setIsHidden] = React.useState(true);
   return (
     <div className="flex w-full flex-col gap-4">
       <Carousel className="w-full">
@@ -53,7 +54,7 @@ export default function Widget() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <div className="animate-border rounded-lg  border-dashed bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1 duration-6s">
+      <div className={cn(`rounded-lg border-dashed bg-[length:400%_400%] bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 p-1 duration-6s`, isHidden ? "hidden" : "")}>
         <div className="flex w-full flex-col gap-6 rounded-md bg-black p-6 max-[22rem]:p-2">
           <p
             className={cn(

@@ -47,7 +47,7 @@ export default function Wear() {
 			</p>
 			<Link
 				className="inline-flex h-auto w-full items-center justify-center rounded-lg bg-sky-600  px-6 py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-				href="tg://resolve?domain=Horny_Place_bot"
+				href="https://t.me/Horny_Place_bot"
 			>
 				Заказать
 			</Link>

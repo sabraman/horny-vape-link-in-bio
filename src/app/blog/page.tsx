@@ -69,13 +69,13 @@ export default function Page() {
             <div className="mt-6 flex flex-col gap-4">
               <Link
                 className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="tg://resolve?domain=hornyplace_tg"
+                href="https://t.me/hornyplace_tg"
               >
                 Telegram
               </Link>
               <Link
                 className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-600 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="tg://resolve?domain=Horny_Place_bot"
+                href="https://t.me/Horny_Place_bot"
               >
                 Наш бот
               </Link>
@@ -164,7 +164,7 @@ export default function Page() {
             <div className="mt-6 flex flex-col gap-4">
               <Link
                 className="inline-flex h-12 items-center justify-center rounded-lg  bg-sky-400 px-6 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-                href="tg://resolve?domain=arkingen"
+                href="https://t.me/arkingen"
               >
                 Узнать больше
               </Link>

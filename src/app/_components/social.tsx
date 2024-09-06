@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Social() {
+export default function uSocial() {
 	return (
 		<div className="flex w-full flex-col gap-6">
 			<p className="text-center text-4xl font-bold uppercase  text-gray-50">
@@ -10,13 +10,13 @@ export default function Social() {
 			<div className="flex flex-col gap-4">
 				<Link
 					className="inline-flex h-auto  items-center justify-center rounded-lg bg-sky-400  px-6 py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-					href="tg://resolve?domain=hornyplace_tg"
+					href="https://t.me/hornyplace_tg"
 				>
 					Telegram
 				</Link>
 				<Link
 					className="inline-flex h-auto  items-center justify-center rounded-lg bg-sky-600  px-6 py-3 text-xl font-bold uppercase text-gray-50 transition-colors hover:bg-sky-400/90 focus:outline-none focus:ring-1 focus:ring-gray-300"
-					href="tg://resolve?domain=Horny_Place_bot"
+					href="https://t.me/Horny_Place_bot"
 				>
 					Наш бот
 				</Link>
